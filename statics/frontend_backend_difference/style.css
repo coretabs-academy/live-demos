@@ -1,0 +1,137 @@
+body{
+  background-color: #fafafa;
+  direction: rtl;
+}
+.meal-card{
+  width: 500px;
+  height: 150px;
+  background-color: white;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  display: flex;
+  overflow: hidden;
+  transition: box-shadow ease-in-out 0.3s, opacity 0.4s;
+  opacity: 1;
+}
+.meal-card:hover{
+  box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.1);
+}
+.meal-image{
+  width: 200px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.meal-image img{
+  height: 100%;
+  
+}
+.meal-info{
+  width: 400px;
+  height: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+h2{
+  margin-bottom: 0;
+  color: #222f3e;
+  font-size: 22px;
+}
+p{
+  margin-top: 10px;
+  color: #6b7886;
+  font-size: 16px;
+}
+.meal-order{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.price{
+  margin: 0;
+  color: #ff9f43;
+  font-family: arial;
+  padding-top: 5px;
+}
+.buy{
+  text-decoration: none;
+  background-color: #ff9f43; 
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  display: block;
+  transition: background-color ease-in-out 0.3s;
+}
+.buy:hover{
+  background-color: #ff834d;
+}
+/*Admin page style*/
+
+.container{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 40px;
+  margin-top: 50px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+  box-sizing: border-box;  
+  /*border-top: 8px solid #ff9f43;*/
+}
+
+.container h1{
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-top: 5px;
+}
+
+.container input[type="text"]{
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  height: 45px;
+  padding-right: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border ease-in-out 0.3s;
+  box-sizing: border-box;
+}
+
+.container input[type="text"]:focus{
+  border: 1px solid #ff9f43;
+  outline: 0;
+}
+
+.container button{
+  margin-top: 40px;
+  background-color: #ff9f43;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.container button:hover{
+  background-color: #ff834d;
+}
