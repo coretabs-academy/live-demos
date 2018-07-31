@@ -5,6 +5,6 @@ services:
       build:
         context: .
         dockerfile: ./dockerfile
-      command: sh -c "gunicorn --bind unix:/var/demos/frontend_backend_difference/main.sock -m 007 frontend_backend_difference.wsgi"
+      command: sh -c "nginx && gunicorn --bind 0.0.0.0:4000 -m 007 frontend_backend_difference.wsgi"
       ports:
         - "8002:80"
