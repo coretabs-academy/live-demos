@@ -8,9 +8,4 @@ server {
     location /frontend-backend-difference/api {
         proxy_pass http://0.0.0.0:4000/frontend-backend-difference/api;
     }
-
-    location / {
-        root /var/demos/statics;
-        try_files $uri $uri/ /index.html;
-    }
 }

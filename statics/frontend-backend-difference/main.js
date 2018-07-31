@@ -28,7 +28,7 @@ function create_meal_card(meal) {
 
 function get_all_meals() {
 
-    const url = 'https://coretabs.net/frontend-backend-difference/api/meals';
+    const url = 'https://demos.coretabs.net/server/frontend-backend-difference/api/meals';
     fetch(url)
         .then(
             response => response.json()

@@ -1,5 +1,5 @@
 function addMeal(mealData) {
-    const url = 'https://coretabs.net/frontend-backend-difference/api/meals';
+    const url = 'https://demos.coretabs.net/server/frontend-backend-difference/api/meals';
     fetch(url, { method: 'post', body: mealData, headers: { 'Content-Type': 'application/json' } })
         .then(
             response => response.text()
