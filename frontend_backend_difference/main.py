@@ -16,6 +16,10 @@ class Meal():
 
 
 def get_all_meals():
+
+    if len(meals_list) < 3:
+        clean_and_seed_meals()
+
     all_meals = [meal.__dict__ for meal in meals_list]
     all_meals = list(reversed(all_meals))
     return jsonify(all_meals)
@@ -44,15 +48,16 @@ def clean_and_seed_meals():
 
 
 def add_new_meal(meal_data):
+
+    if len(meals_list) > 15:
+        clean_and_seed_meals()
+
     new_meal = Meal(
         name=meal_data['name'],
         description=meal_data['description'],
         image=meal_data['image'],
         price=meal_data['price'],
     )
-
-    if len(meals_list) > 15:
-        clean_and_seed_meals()
 
     meals_list.append(new_meal)
 
@@ -61,8 +66,6 @@ def add_new_meal(meal_data):
 def meals():
 
     if request.method == 'GET':
-        if len(meals_list) < 3:
-            clean_and_seed_meals()
         return get_all_meals()
 
     elif request.method == 'POST':
