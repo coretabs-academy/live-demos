@@ -51,7 +51,7 @@ def add_new_meal(meal_data):
         price=meal_data['price'],
     )
 
-    if len(meals_list) >= 15:
+    if len(meals_list) > 15:
         clean_and_seed_meals()
 
     meals_list.append(new_meal)
@@ -61,6 +61,8 @@ def add_new_meal(meal_data):
 def meals():
 
     if request.method == 'GET':
+        if len(meals_list) < 3:
+            clean_and_seed_meals()
         return get_all_meals()
 
     elif request.method == 'POST':
