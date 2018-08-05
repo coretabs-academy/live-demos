@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;  
+}
+body{
+  background-color: #f6f6fc;
+  direction: rtl;
+}
+#container{
+  padding-bottom: 50px; 
+}
+.meal-card{
+  width: 500px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+  margin: 25px auto 0;
+  display: flex;
+  overflow: hidden;
+  transition: box-shadow ease-in-out 0.3s, opacity 0.4s;
+}
+.meal-image{
+  width: 160px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.meal-image img{
+  height: 100%;
+}
+.meal-info{
+  width: 340px;
+  padding: 5px 30px 0 20px;
+}
+h2{
+  margin-bottom: 0;
+  color: #222f3e;
+  font-size: 22px;
+}
+p{
+  margin-top: 10px;
+  color: #6b7886;
+}
+.meal-order{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.price{
+  color: #ff9f43;
+  font-family: arial;
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.order-button{
+  text-decoration: none;
+  background-color: #ff9f43; 
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 15px;
+  display: block;
+  transition: background-color ease-in-out 0.3s;
+  cursor: pointer;
+}
+.order-button img{
+  pointer-events: none;
+}
+.order-button:hover{
+  background-color: #ff830c;
+}
+.meal-card:hover{
+  box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);
+}
+#new-meal {
+  width: 500px;
+  margin: 30px auto 30px;
+}
+#new-meal a{
+  display: block;
+  background: #1dd19f;
+  width: 160px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 30px;
+  color:#fff;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.05);
+}

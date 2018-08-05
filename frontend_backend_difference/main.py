@@ -29,22 +29,22 @@ def clean_and_seed_meals():
     meals_list.clear()
 
     meals_list.append(Meal(
-        name='ساندويش الفاهيتا',
-        description='ساندويش الدجاج مع الطماطم والخضروات',
-        image='img/Fajita.png',
-        price='$12'))
+        name='عصير فراولة',
+        description='عصير الفراولة المثلج مع قطع الفرولة الطازجة',
+        image='img/juice.png',
+        price='10'))
 
     meals_list.append(Meal(
         name='فطائر محلاة',
         description='فطائر محلاة بالفراولة والمكسرات',
         image='img/pancake.png',
-        price='$8'))
+        price='8'))
 
     meals_list.append(Meal(
-        name='عصير فراولة',
-        description='عصير الفراولة المثلج مع قطع الفرولة الطازجة',
-        image='img/juice.png',
-        price='$10'))
+        name='ساندويش الفاهيتا',
+        description='ساندويش الدجاج مع الطماطم والخضروات',
+        image='img/Fajita.png',
+        price='12'))
 
 
 def add_new_meal(meal_data):

@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>المدير | إضافة وجبة جديدة</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <title>إضافة وجبة جديدة</title>
 </head>
 
 <body>
-
-    <div class="container">
+    <div id="back-home">
+        <a href="index.html" title="">عودة للرئيسية</a>
+    </div>
+    <div id="container">
         <h1>إضافة وجبة جديدة</h1>
         <form>
-            <input name="name" type="text" placeholder="إسم الوجبة">
-            <input name="description" type="text" placeholder="الوصف">
-            <input name="price" type="text" placeholder="السعر">
-            <input name="image" type="text" placeholder="الصورة">
-            <button type="submit">+ إضافة الوجبة</button>
+          <input type="text" name="name" placeholder="إسم الوجبة" maxlength="34" required>
+          <input type="text" name="description" placeholder="الوصف" maxlength="44" required>
+          <input type="number" name="price" placeholder="السعر" min="0" max="9999" required>
+          <input type="url" name="image" placeholder="الصورة" required>
+          <button type="submit" id="submit-meal">+ إضافة الوجبة</button>
         </form>
     </div>
 
-    <script src="admin.js"></script>
+    <script src="js/admin.js"></script>
 
 </body>
 
