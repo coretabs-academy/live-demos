@@ -31,19 +31,19 @@ def clean_and_seed_meals():
     meals_list.append(Meal(
         name='عصير فراولة',
         description='عصير الفراولة المثلج مع قطع الفرولة الطازجة',
-        image='img/juice.png',
+        image='https://demos.coretabs.net/frontend-backend-difference/img/juice.png',
         price='10'))
 
     meals_list.append(Meal(
         name='فطائر محلاة',
         description='فطائر محلاة بالفراولة والمكسرات',
-        image='img/pancake.png',
+        image='https://demos.coretabs.net/frontend-backend-difference/img/pancake.png',
         price='8'))
 
     meals_list.append(Meal(
         name='ساندويش الفاهيتا',
         description='ساندويش الدجاج مع الطماطم والخضروات',
-        image='img/Fajita.png',
+        image='https://demos.coretabs.net/frontend-backend-difference/img/Fajita.png',
         price='12'))
 
 
