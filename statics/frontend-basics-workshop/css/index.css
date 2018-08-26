@@ -9,20 +9,21 @@ body{
 }
 header{
   height: 70px;
-  background: #1428a0;
+  background: #fff;
   overflow:auto;
   text-align: center;
-  
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 
 header h1{
   margin-top: 18px;
   margin-bottom: 0px;
+  font-size: 30px;
 }
 
 header a{
   text-decoration: none;
-  color: #fff;
+  color: #576574;
 }
 
 section{
@@ -67,7 +68,7 @@ section div img{
 }
 
 #more-button:hover{
-  background: #1428a0;
+  background: #01a3a4;
   color: #fff;
   border: none;
 }

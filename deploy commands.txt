@@ -1,0 +1,7 @@
+ssh -i myssh.pem ubuntu@ec2-18-188-100-3.us-east-2.compute.amazonaws.com
+
+sudo -i
+
+cd /var/live-demos
+
+git pull
