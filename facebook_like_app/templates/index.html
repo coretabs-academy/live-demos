@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <title>Posty</title>
+</head>
+
+<body>
+    <header>
+        <h1>Posty</h1>
+        <nav>
+            <a href="{{ url_for('post_add') }}">New</a>
+        </nav>
+    </header>
+
+    <main>
+
+        {% for post in posts %}
+        <article>
+
+            <div>
+                <img src="{{post.photo_url}}">
+            </div>
+
+            <div>
+                <h2>{{post.name}}</h2>
+                <p>{{post.body}}</p>
+                <div class="btn-section">
+                    <a href="{{ url_for('post_update', id=post.id) }}">Edit</a> |
+                    <a href="{{ url_for('post_delete', id=post.id) }}">Delete</a>
+                </div>
+            </div>
+
+        </article>
+
+        {% endfor %}
+
+    </main>
+
+</body>
+
+</html>
