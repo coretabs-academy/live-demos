@@ -141,6 +141,7 @@ COPY . /var/demos
 WORKDIR /var/demos
 
 RUN apk update && apk upgrade
+RUN apk add supervisor
 
 RUN pip install --upgrade pip \
     && pip install --upgrade setuptools \
@@ -149,5 +150,7 @@ RUN pip install --upgrade pip \
 
 COPY nginx.default /etc/nginx/sites-enabled/default
 COPY nginx.conf /etc/nginx/nginx.conf
+
+ADD ./supervisord.conf /etc/supervisord.conf
 
 STOPSIGNAL SIGTERM
