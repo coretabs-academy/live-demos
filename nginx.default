@@ -8,4 +8,8 @@ server {
     location /frontend-backend-difference/api {
         proxy_pass http://0.0.0.0:4000/frontend-backend-difference/api;
     }
+
+    location /facebook-like-app {
+        proxy_pass http://0.0.0.0:4001;
+    }
 }
