@@ -10,6 +10,6 @@ server {
     }
 
     location /facebook-like-app {
-        proxy_pass http://0.0.0.0:4001;
+        proxy_pass http://0.0.0.0:4001/;
     }
 }
