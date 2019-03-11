@@ -59,6 +59,11 @@ section img{
   margin: 15px;
 }
 
+section img:hover{
+  padding: 20px;
+  background-color: #ddd;
+}
+
 section a{
   display: block;
   width: 160px;
@@ -69,7 +74,7 @@ section a{
   text-decoration: none;
   line-height: 42px;
   font-size: 18px;
-  transition: .4s;
+
 }
 
 section a:hover{
@@ -88,6 +93,10 @@ footer{
   color: #999;
 }
 
+section a,
+section img{
+  transition: .4s;
+}
 @media (max-width: 479px){
   section img{
     float: none;
