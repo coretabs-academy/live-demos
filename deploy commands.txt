@@ -1,4 +1,4 @@
-ssh -i myssh.pem ubuntu@ec2-18-188-100-3.us-east-2.compute.amazonaws.com
+ssh -i ssh_key.pem USER_NAME@YOUR_IP_ADDRESS
 
 sudo -i
 
