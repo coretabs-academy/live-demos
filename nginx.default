@@ -16,4 +16,8 @@ server {
     location /ramadan-contest-2019/adel-lara {
         proxy_pass http://0.0.0.0:4002/;
     }
+
+    location /ramadan-contest-2019/sohep-ahmed-abderrahman {
+        proxy_pass http://0.0.0.0:4003/;
+    }
 }
