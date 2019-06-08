@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styel.css">
+  <title>Alhakem</title>
+</head>
+
+<body>
+
+
+  <header id="about">
+    <img class="about-avatar" src="images/avatar.jpg" alt="my photo">
+    <h1 class="about-heading">Hi, I'm Mohammed Alhakem</h1>
+    <p class="about-description">A Front-end Web Developer</p>
+    <a class="hire-btn" href="#contact">Hire Me!</a>
+  </header>
+
+  <nav class="navbar navbar-horizontal">
+    <ul>
+      <li class="nav-link"><a href="#about" class="active">About</a>
+        <li class="nav-link"><a href="#portfolio">Portfolio</a>
+      <li class="nav-link"><a href="#blog">Blog</a>
+      <li class="nav-link"><a href="#contact">Contact Me</a>
+    </ul>
+  </nav>
+
+  <section class="section" id="portfolio">
+    <h2 class="section-heading">my portfolio</h2>
+    <p class="section-description">Good portfolio makes the world more awesome</p>
+    <div class="image-container">
+      <img src="https://source.unsplash.com/320x420/?layout" alt="portfolio image">
+      <img src="https://source.unsplash.com/320x420/?yellow" alt="portfolio image">
+      <img src="https://source.unsplash.com/320x420/?Purple" alt="portfolio image">
+      <img src="https://source.unsplash.com/320x420/?strange" alt="portfolio image">
+      <img src="https://source.unsplash.com/320x420/?ui" alt="portfolio image">
+      <img src="https://source.unsplash.com/320x420/?logo" alt="portfolio image">
+      <img src="https://source.unsplash.com/320x420/?art" alt="portfolio image">
+      <img src="https://source.unsplash.com/320x420/?design" alt="portfolio image">
+    </div>
+  </section>
+
+  <section class="section" id="blog">
+    <h2 class="section-heading article-heading">My blog</h2>
+
+    <article class="article">
+      <h3 class="article-title"><a href="#">Project Planning Tips and Tales for Makers</a></h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint odio iusto similique molestias quidem
+        iste, officiis fuga aperiam beatae impedit tenetur commodi natus, deserunt illum. Impedit, in et! Eius suscipit
+        aliquam, reiciendis porro ipsam iste...</p>
+      <div class="article-info">
+        <div class="article-icon" title="likes"><i class="far fa-heart"></i> 25</div>
+        <div class="article-icon" title="comments"><i class="far fa-comment-alt"></i> 155</div>
+        <div class="article-icon" title="bookmarked"><i class="far fa-bookmark"></i> 36</div>
+      </div>
+    </article>
+
+    <article class="article">
+      <h3 class="article-title"><a href="#">Design is a process of practice</a></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iste minus eum eligendi similique. Quis
+        minus eligendi incidunt harum provident animi veniam non dolore quam. Iusto sapiente consequuntur corrupti
+        aspernatur?...</p>
+      <div class="article-info">
+        <div class="article-icon" title="likes"><i class="far fa-heart"></i> 34</div>
+        <div class="article-icon" title="comments"><i class="far fa-comment-alt"></i> 63</div>
+        <div class="article-icon" title="bookmarked"><i class="far fa-bookmark"></i> 18</div>
+      </div>
+    </article>
+
+    <article class="article">
+      <h3 class="article-title"><a href="#">Getting Started With CSS Layout</a></h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rem dignissimos nesciunt? Hic quam, maxime
+        aspernatur reprehenderit sit esse, voluptatibus rem, nulla magnam accusantium omnis molestias assumenda error
+        doloribus? Ad, dolorem at!...</p>
+      <div class="article-info">
+        <div class="article-icon" title="likes"><i class="far fa-heart"></i> 96</div>
+        <div class="article-icon" title="comments"><i class="far fa-comment-alt"></i> 262</div>
+        <div class="article-icon" title="bookmarked"><i class="far fa-bookmark"></i> 21</div>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="section-heading">Get in touch</h2>
+    <p class="section-description">If you want to talk to me about your project, I would love to hear from you.</p>
+    <div class="contact-container">
+      <form>
+        <input placeholder="Your name" type="text" class="text-input" required>
+        <input placeholder="Your Email" type="email" class="text-input" required>
+        <textarea name="message" class="text-input" placeholder="Your Message" rows="8"></textarea>
+        <button type="submit" class="send-btn"><i class="far fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+    <div class="contact-container">
+      <ul class="social-icons">
+        <li><a href="#" title="Behance"><i class="fab fa-behance"></i></a></li>
+        <li><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p class="copyrights">&copy; All rights reserved. <a href="#" class="to-top-btn">back to top <i
+          class="fas fa-arrow-up"></i></a></p>
+  </footer>
+  <script>
+    var navLink = document.querySelectorAll("nav ul li a");
+
+    window.addEventListener("scroll", event => {
+      var fromTop = window.scrollY + 100;
+
+      navLink.forEach(link => {
+        var section = document.querySelector(link.hash);
+
+        if (
+          section.offsetTop <= fromTop &&
+          section.offsetTop + section.offsetHeight > fromTop
+        ) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    });
+
+
+  </script>
+</body>
+
+</html>
