@@ -6,8 +6,8 @@ RUN apk add nginx \
 
 RUN apk add supervisor
 
-COPY nginx.conf /etc/nginx/conf.d/demos.conf
-COPY empty.conf /etc/nginx/conf.d/default.conf
+COPY ./nginx.conf /etc/nginx/conf.d/demos.conf
+COPY ./empty.conf /etc/nginx/conf.d/default.conf
 
 ADD ./supervisord.conf /etc/supervisord.conf
 

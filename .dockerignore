@@ -1,6 +1,1 @@
 statics
-docker-compose.yml
-docker-compose-dev.yml
-nginx.conf
-empty.conf
-supervisord.conf
