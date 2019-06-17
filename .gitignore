@@ -1,2 +1,2 @@
-logs/
-apps_logs/
+nginx_dev_logs/
+apps_dev_logs/
