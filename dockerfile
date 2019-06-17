@@ -11,7 +11,7 @@ COPY empty.conf /etc/nginx/conf.d/default.conf
 
 ADD ./supervisord.conf /etc/supervisord.conf
 
-COPY . /var/demos
+COPY ./demos /var/demos
 WORKDIR /var/demos
 
 RUN pip install --upgrade pip \
