@@ -1,6 +1,6 @@
 [submodule "ramadan_contest_2019/adel_lara"]
-	path = ramadan_contest_2019/adel_lara
+	path = demos/ramadan_contest_2019/adel_lara
 	url = https://github.com/coretabs-academy/Adelara-coretabs-contest
 [submodule "ramadan_contest_2019/sohep_ahmed_abderrahman"]
-	path = ramadan_contest_2019/sohep_ahmed_abderrahman
+	path = demos/ramadan_contest_2019/sohep_ahmed_abderrahman
 	url = https://github.com/coretabs-academy/Delivery-of-meals
