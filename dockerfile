@@ -11,6 +11,8 @@ RUN apk add nginx \
     && mkdir -p /run/nginx \
     && apk add supervisor
 
+RUN mkdir /var/log/gunicorn
+
 COPY ./nginx.conf /etc/nginx/conf.d/demos.conf
 COPY ./empty.conf /etc/nginx/conf.d/default.conf
 

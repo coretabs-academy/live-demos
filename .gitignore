@@ -1,2 +1,4 @@
 nginx_dev_logs/
 apps_dev_logs/
+gunicorn_dev_logs/
+*.pyc
