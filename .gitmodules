@@ -4,3 +4,6 @@
 [submodule "ramadan_contest_2019/sohep_ahmed_abderrahman"]
 	path = demos/ramadan_contest_2019/sohep_ahmed_abderrahman
 	url = https://github.com/coretabs-academy/Delivery-of-meals
+[submodule "ramadan_contest_2019/noura_tarek_othman"]
+	path = demos/ramadan_contest_2019/noura_tarek_othman
+	url = https://github.com/coretabs-academy/MealOrder
