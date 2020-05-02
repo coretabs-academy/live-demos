@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  apps:
+      volumes:
+        - ./nginx_dev_logs/:/var/log/nginx/
+        - ./gunicorn_dev_logs/:/var/log/gunicorn/
+        - ./cert/:/var/cert/
+        - ./nginx.dev.conf:/etc/nginx/conf.d/demos.conf
+      ports:
+        - "80:80"
+        - "443:443"
+      
