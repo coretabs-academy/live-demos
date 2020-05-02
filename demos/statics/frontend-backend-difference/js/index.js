@@ -56,7 +56,7 @@ const createCard = meal => {
 }
 
 const getAllMeals = () => {
-    const url = 'https://demos.coretabs.net/server/frontend-backend-difference/api/meals';
+    const url = 'https://frontend-backend-difference.demos.coretabs.net/api/meals';
     fetch(url)
         .then(
             response => response.json()

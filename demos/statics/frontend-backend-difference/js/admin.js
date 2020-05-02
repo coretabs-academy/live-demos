@@ -20,7 +20,7 @@ setValidationMsg(mealImg, 'قم بإدخال رابط لصورة الوجبة');
 setValidationMsg(mealPrice, 'قم بإدخال سعر الوجبة');
 
 const addMeal = mealData => {
-    const url = 'https://demos.coretabs.net/server/frontend-backend-difference/api/meals';
+    const url = 'https://frontend-backend-difference.demos.coretabs.net/api/meals';
     fetch(url, { method: 'post', body: mealData, headers: { 'Content-Type': 'application/json' } })
         .then(
             response => response.text()

@@ -62,7 +62,7 @@ def add_new_meal(meal_data):
     meals_list.append(new_meal)
 
 
-@app.route('/frontend-backend-difference/api/meals', methods=['GET', 'POST'])
+@app.route('/api/meals', methods=['GET', 'POST'])
 def meals():
 
     if request.method == 'GET':
