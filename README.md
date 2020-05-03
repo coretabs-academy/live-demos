@@ -14,6 +14,16 @@ git pull
 docker-compose up -d --force-recreate --build
 ```
 
+## Adding New Website
+
+1. Add it to nginx.conf **and nginx.dev.conf**
+2. Add it to supervisord.conf
+3. Check the python requirements (django_requirements.txt / flask_requirements.txt)
+4. Add it to your hosts (if you're developing locally)
+
+* For static website just add them in the static directory and that's all 😁
+
+
 ## Develop Locally
 
 ### 1. Add to your hosts file the following
@@ -22,6 +32,7 @@ docker-compose up -d --force-recreate --build
 127.0.0.1	demos.coretabs.net
 127.0.0.1	frontend-backend-difference.demos.coretabs.net
 127.0.0.1	facebook-like-app.demos.coretabs.net
+127.0.0.1   django-store.demos.coretabs.net
 ```
 
 ### 2. Create certificate using mkcert
