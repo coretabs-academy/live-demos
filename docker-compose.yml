@@ -6,8 +6,11 @@ services:
         context: .
         dockerfile: ./dockerfile
       command: sh -c "supervisord --nodaemon --configuration /etc/supervisord.conf"
+      volumes:
+        - /etc/letsencrypt/live/demos.coretabs.net/fullchain.pem:/var/cert/fullchain.pem
+        - /etc/letsencrypt/live/demos.coretabs.net/privkey.pem:/var/cert/privkey.pem
       ports:
-        - "8002:80"
+        - "8002:443"
       deploy:
         resources:
           limits:
