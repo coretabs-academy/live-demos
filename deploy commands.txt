@@ -1,7 +1,0 @@
-ssh -i ssh_key.pem USER_NAME@YOUR_IP_ADDRESS
-
-sudo -i
-
-cd /var/live-demos
-
-git pull
