@@ -11,7 +11,7 @@ cd /var/live-demos
 
 git pull
 
-docker-compose up -d --force-recreate --build
+docker-compose --compatibility up -d --force-recreate --build
 ```
 
 ## Adding New Website
