@@ -143,6 +143,11 @@ certbot-auto renew --dry-run
 If you see the message `done... new certificate ready!`, then everything is running smoothly.
 
 
+## Env vars
+
+Environment variables are managed in [`supervisord.conf` here](https://github.com/coretabs-academy/live-demos/blob/master/supervisord.conf)
+
+
 ## Deploy Commands
 
 ```
